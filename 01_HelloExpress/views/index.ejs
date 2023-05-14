@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <%# 注释：下面标签用于条件渲染 %>
+        <% if (name)  { %>
+            <%# 注释：下面标签用于输出模板变量的值 %>
+            <h1>Hello <%= name %></h1>
+        <% } else { %>
+            <h1>Hello World</h1>
+        <% } %>
+        <%# 注释：下面标签用于循环渲染 %>
+        <% messages.forEach(function(item) { %>       
+            <p><%= item %></p>
+        <% }); %>
+        </body>
+</html>
